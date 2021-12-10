@@ -1,26 +1,21 @@
 import React from "react";
 
+import { Select } from '@chakra-ui/react'
+
 const TownList = ({ title, data, handleChange }) => {
 
-  let id = `select-${title}`;
-  let label = title.charAt(0).toUpperCase() + title.slice(1);
   let options = data;
 
-  console.log(options, title, label);
   return (
-    <>
-      <label htmlFor={id}>{label}</label>
-
-      <select name={id} id={id} onChange={handleChange}>
-        <option value="">Elige un {title}</option>
+      <Select name={title} id={title} onChange={handleChange}>
+        <option value="">Elige uno de los {title}</option>
         {
           options.map((el) => (
             <option value={el}>
               {el}
             </option>
           ))}
-      </select>
-    </>
+      </Select>
   );
 };
 
