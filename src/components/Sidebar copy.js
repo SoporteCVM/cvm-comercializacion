@@ -1,9 +1,9 @@
-import { Box, Button, Stack, Image, Divider } from "@chakra-ui/react";
-import { AiFillProfile, AiFillCheckCircle } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Box, Button, Stack } from "@chakra-ui/react";
+import { FiLogIn, FiUserPlus } from "react-icons/fi";
+import { Image, Divider } from "@chakra-ui/react";
 import React from "react";
 
-export const LoginSidebar = () => {
+export const Sidebar = () => {
   return (
     <Box
       position="fixed"
@@ -21,29 +21,27 @@ export const LoginSidebar = () => {
           my="15px"
         />
         <Divider colorScheme="black" />
-
         <Button
-          leftIcon={<AiFillProfile />}
+          leftIcon={<FiLogIn />}
           bg="#809143"
-          w="90%"
+          w="80%"
           boxShadow="base"
           py={15}
           pl={10}
           pr={10}
         >
-          <Link to="/comregister">Registro de datos</Link>
+          Iniciar sesión
         </Button>
-
         <Button
-          leftIcon={<AiFillCheckCircle />}
+          leftIcon={<FiUserPlus />}
           bg="#809143"
-          w="90%"
+          w="80%"
           boxShadow="base"
           py={15}
           pl={10}
           pr={10}
         >
-          <Link to="/status">Estado de comprobante</Link>
+          Registrarse
         </Button>
       </Stack>
     </Box>
