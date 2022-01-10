@@ -1,8 +1,9 @@
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 
-import { ComLogin } from "./ComLogin";
+import { LoginSidebar } from "./LoginSidebar";
 import { ComForm } from "./ComForm";
+import { ComLogin } from "./ComLogin";
 
 export const ComApp = () => {
   return (

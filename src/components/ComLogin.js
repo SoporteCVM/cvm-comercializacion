@@ -1,11 +1,15 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import React from "react";
+import { LoginForm } from "./LoginForm";
 import { Sidebar } from "./Sidebar";
 
 export const ComLogin = () => {
   return (
-    <Box w="100vw" bg="#eee" h="100vh">
-      <Sidebar />
+    <Box>
+      <Box bg="#eee" h="100vh">
+        <Sidebar />
+        <LoginForm />
+      </Box>
     </Box>
   );
 };
