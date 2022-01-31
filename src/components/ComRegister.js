@@ -1,15 +1,15 @@
 import { Box } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { LoginForm } from "./LoginForm";
+import { RegisterForm } from "./RegisterForm";
 import { Sidebar } from "./Sidebar";
 
-export const ComLogin = () => {
+export const ComRegister = () => {
   const [loginState, setLoginState] = useState("login");
   return (
     <Box>
       <Box bg="#eee" h="100vh">
         <Sidebar />
-        <LoginForm />
+        <RegisterForm />
       </Box>
     </Box>
   );

@@ -36,7 +36,7 @@ export const LoginForm = () => {
         </Stack>
         <Center mt="8px">
           <Button colorScheme="green" variant="solid" type="submit">
-            Enviar
+            Iniciar sesión
           </Button>
         </Center>
       </Box>

@@ -66,7 +66,7 @@ export const ComForm = () => {
             name="empresa"
             size="md"
             boxShadow="xs"
-            {...register("empresa")}
+            {...register("nombre")}
           />
           <Input
             placeholder="RIF"
@@ -161,25 +161,25 @@ export const ComForm = () => {
             placeholder="Número de teléfono"
             size="md"
             boxShadow="xs"
-            {...register("telefono")}
+            {...register("rnumtelefono")}
           />
           <Input
             placeholder="Email"
             size="md"
             boxShadow="xs"
-            {...register("email")}
+            {...register("rcorreo")}
           />
           <Input
             placeholder="Número de cédula"
             size="md"
             boxShadow="xs"
-            {...register("cedula")}
+            {...register("rcedula")}
           />
           <Input
             placeholder="RUM"
             size="md"
             boxShadow="xs"
-            {...register("rum")}
+            {...register("rrum")}
           />
         </Stack>
       </Box>
@@ -202,32 +202,32 @@ export const ComForm = () => {
           Actividad Minera
         </Heading>
         <Stack spacing={4} direction={"row"} p={3} flex="1">
-          <Checkbox {...register("mineral")} value="oro" colorScheme={"green"}>
+          <Checkbox {...register("activmin")} value="oro" colorScheme={"green"}>
             Oro
           </Checkbox>
           <Checkbox
-            {...register("mineral")}
+            {...register("activmin")}
             value="diamante"
             colorScheme={"green"}
           >
             Diamante
           </Checkbox>
           <Checkbox
-            {...register("mineral")}
+            {...register("activmin")}
             value="coltan"
             colorScheme={"green"}
           >
             Coltán
           </Checkbox>
           <Checkbox
-            {...register("mineral")}
+            {...register("activmin")}
             value="plata"
             colorScheme={"green"}
           >
             Plata
           </Checkbox>
           <Checkbox
-            {...register("mineral")}
+            {...register("activmin")}
             value="calsiterita"
             colorScheme={"green"}
           >
@@ -235,7 +235,7 @@ export const ComForm = () => {
           </Checkbox>
         </Stack>
         <Textarea
-          {...register("descactividad")}
+          {...register("descactivmin")}
           placeholder="Breve descripción de su actividad minera"
         />
       </Box>
